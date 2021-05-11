@@ -88,6 +88,10 @@ public class AirSim : ModuleRules
 
         PublicIncludePaths.Add(Path.Combine(AirLibPath, "include"));
         PublicIncludePaths.Add(Path.Combine(AirLibPath, "deps", "eigen3"));
+        //debug
+        PublicIncludePaths.Add("C:/Users/grvc/Downloads/boost_1_62_0");
+        //PublicIncludePaths.Add("C:/Boost/include/boost-1_71");
+    
         AddOSLibDependencies(Target);
 
         SetupCompileMode(CompileMode.HeaderOnlyWithRpc, Target);

@@ -1,6 +1,7 @@
 #include "SimModeWorldBase.h"
 #include "physics/FastPhysicsEngine.hpp"
 #include "physics/ExternalPhysicsEngine.hpp"
+#include "physics/OrnithopterPhysicsEngine.hpp"
 #include <exception>
 #include "AirBlueprintLib.h"
 
@@ -75,6 +76,9 @@ std::unique_ptr<ASimModeWorldBase::PhysicsEngineBase> ASimModeWorldBase::createP
     }
     else if (physics_engine_name == "ExternalPhysicsEngine") {        
         physics_engine.reset(new msr::airlib::ExternalPhysicsEngine());
+    }
+    else if (physics_engine_name == "OrnithopterPhysicsEngine") {
+        physics_engine.reset(new msr::airlib::OrnithopterPhysicsEngine());
     }
     else {
         physics_engine.reset();
