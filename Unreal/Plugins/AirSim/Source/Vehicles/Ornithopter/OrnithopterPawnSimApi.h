@@ -7,7 +7,7 @@
 #include "common/CommonStructs.hpp"
 #include "common/common_utils/UniqueValueMap.hpp"
 #include "physics/Kinematics.hpp"
-#include "vehicles/ornithopter/Ornithopter.hpp"
+#include "vehicles/ornithopter/OrnithopterPhysicsBody.hpp"
 #include "vehicles/ornithopter/OrnithopterParams.hpp"
 #include <future>
 
@@ -16,7 +16,7 @@ class OrnithopterPawnSimApi : public PawnSimApi
 public:
     typedef msr::airlib::real_T real_T;
     typedef msr::airlib::Utils Utils;
-    typedef msr::airlib::Ornithopter Ornithopter;
+    typedef msr::airlib::OrnithopterPhysicsBody Ornithopter;
     typedef msr::airlib::StateReporter StateReporter;
     typedef msr::airlib::UpdatableObject UpdatableObject;
     typedef msr::airlib::Pose Pose;

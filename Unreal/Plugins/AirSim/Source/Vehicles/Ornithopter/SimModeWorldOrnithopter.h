@@ -35,11 +35,8 @@ protected: //overrides
 private:
     typedef AOrnithopterPawn TVehiclePawn;
     TVehiclePawn* pawn_;
-    std::mutex pawn_mutex_;
-
     int counter_ = 0;
     float roll_ = 0;
     float pitch_ = 0;
     float yaw_ = 0;
-    UTextureRenderTarget2D* colorRenderTarget_ = nullptr;
 };
